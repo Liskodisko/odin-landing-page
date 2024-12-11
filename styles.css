@@ -7,3 +7,59 @@ body {
     display: flex;
     flex-direction: column;
 }
+
+body > * { /* target all children of body element */
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.header,
+.hero-area {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: bisque;
+}
+
+.hero-image {
+    width: 300px;
+    height: 130px;
+    background-color: gray;
+}
+
+.info-area {
+    display: flex;
+    flex-direction: column;
+    background-color: azure;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.card-image {
+    width: 75px;
+    height: 75px;
+    border: 1px solid black;
+}
+
+.quote-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: bisque;
+}
+
+.quote-text {
+    font-style: italic;
+    font-size: 24px;
+}
+
+.quote-author {
+    align-self: flex-end;
+    font-weight: bold;
+}
+
