@@ -6,6 +6,7 @@
 body {
     display: flex;
     flex-direction: column;
+    min-height: 100vh;
 }
 
 body > * { /* target all children of body element */
@@ -63,3 +64,25 @@ body > * { /* target all children of body element */
     font-weight: bold;
 }
 
+.signup-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signup-highlighted {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    background-color: aquamarine;
+    padding: 30px;
+    margin: 60px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: bisque;
+    margin-top: auto;
+}
