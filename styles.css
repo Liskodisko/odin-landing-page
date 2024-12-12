@@ -7,6 +7,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    font-family: system-ui, 'Segoe UI', sans-serif;
 }
 
 body > * { /* target all children of body element */
@@ -19,13 +20,35 @@ body > * { /* target all children of body element */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: bisque;
+    background-color: #1F2937;
+    color: white;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    font-weight: 900;
+    color: #F9FAF8;
+}
+
+.hero-text p {
+    font-size: 18px;
+    color: #E5E7EB;
 }
 
 .hero-image {
     width: 300px;
     height: 130px;
     background-color: gray;
+}
+
+button {
+    background-color: #3882F6;
+    border-radius: 4px;
+    padding: 5px 25px;
+    border: none;
+    font-size: 18px;
+    color: #E5E7EB;
+    font-weight: 800;
 }
 
 .info-area {
