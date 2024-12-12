@@ -22,7 +22,7 @@ body > * { /* target all children of body element */
     flex-direction: row;
     justify-content: space-between;
     background-color: #1F2937;
-    color: white;
+    color: #F9FAF8;
 }
 
 .header {
@@ -31,8 +31,8 @@ body > * { /* target all children of body element */
 }
 
 .hero-area {
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 70px;
+    padding-bottom: 70px;
     gap: 12px;
 }
 
@@ -44,7 +44,7 @@ body > * { /* target all children of body element */
 .hero-text {
     display: flex;
     flex-direction: column;
-    row-gap: 25px;
+    row-gap: 25px; /* creates a gap between items when flex-direction is column */
     width: 700px;
 }
 
@@ -82,12 +82,15 @@ button {
     font-size: 18px;
     color: #E5E7EB;
     font-weight: 800;
+    width: 120px;
+    height: 40px;
+    flex-shrink: 0;
 }
 
 .info-area {
     display: flex;
     flex-direction: column;
-    background-color: azure;
+    background-color: white;
     padding-top: 30px;
     padding-bottom: 30px;
 }
@@ -128,38 +131,54 @@ button {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: bisque;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #E5E7EB;
+    row-gap: 10px;
 }
 
 .quote-text {
+    width: 600px;
     font-style: italic;
     font-size: 24px;
 }
 
 .quote-author {
-    align-self: flex-end;
+    width: 600px;
+    align-self: center;
     font-weight: bold;
+    text-align: end;
 }
 
 .signup-area {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: white;
 }
 
 .signup-highlighted {
     display: flex;
     flex: 1;
     justify-content: space-between;
-    background-color: aquamarine;
-    padding: 30px;
+    background-color: #3882F6;
+    color: #F9FAF8;
+    border-radius: 5px;
+    padding: 30px 80px;
     margin: 60px;
+}
+
+.signup-highlighted button {
+    outline: 1px solid white;
 }
 
 .footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: bisque;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background-color: #1F2937;
+    color: #F9FAF8;
     margin-top: auto;
 }
